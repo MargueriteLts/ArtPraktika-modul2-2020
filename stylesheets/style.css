@@ -1,2 +1,8 @@
 @import 'reset.css';
-@import "layout.css";
+/* @import "layout.css"; */
+@import "layoutnew.css";
+@font-face {
+  font-family: 'Gotham', sans-serif;
+  src:url('../fonts/GothaProReg.otf');
+  font-style: normal;
+}
