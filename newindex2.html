@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <title></title>
     <style media="screen">
-      * {
+      /* * {
         background: red;
-      }
+      } */
       .container {
         background: linear-gradient(90deg, rgba(91,81,255,1) 0%, rgba(255,255,255,1) 100%);
         width: 500%;
@@ -24,8 +24,8 @@
       h1, p {
         font-family: 'Gotham', sans-serif;
         color: white;
-        position: relative;
-        left: 3.4%;
+        position: absolute;
+        left: 3.5%;
       }
       h1 {
         /* font-size: 5em; */
@@ -43,9 +43,9 @@
       #title {
         width: 25%;
         left: 3%;
-        top: 5%;
-        position: relative;
-        background: red;
+        top: 3%;
+        position: absolute;
+        /* background: red; */
       }
       #train {
         position: fixed;
@@ -62,11 +62,16 @@
         position: absolute;
       } */
       .station {
-        /* position: absolute; */
+        position: absolute;
+        width: 10%;
+        height: 100%;
         margin-left: 36%;
-        margin-top: -1%;
-        background: red;
+        bottom: 0;
+        /* overflow: hidden; */
       }
+      /* .star {
+        position: absolute;
+      } */
       .bigcloud {
         width: 6%;
         bottom: -10%;
@@ -80,27 +85,11 @@
         width: 6%;
         position: absolute;
       }
-      .star {
-        position: absolute;
-      }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <!-- smallcloud START -->
-      <img src="images/SmallCloud.svg" alt="smallcloud1" class="smallcloud" style="left: -1%; bottom: -6%; opacity: 0.5;">
-      <img src="images/SmallCloud.svg" alt="smallcloud2" class="smallcloud" style="left: 19%; top: 50%;">
-      <img src="images/SmallCloud.svg" alt="smallcloud3" class="smallcloud" style="left: 33%; top: -7%; opacity: 0.5;">
-      <img src="images/SmallCloud.svg" alt="smallcloud4" class="smallcloud" style="left: 55%; top: 60%;">
-      <img src="images/SmallCloud.svg" alt="smallcloud5" class="smallcloud" style="left: 60%; bottom: -6%; opacity: 0.5;">
-      <img src="images/SmallCloud.svg" alt="smallcloud6" class="smallcloud" style="left: 62%; top: 35%;">
-      <img src="images/SmallCloud.svg" alt="smallcloud8" class="smallcloud" style="left: 73%; top:-6%; opacity: 0.5;">
-      <img src="images/SmallCloud.svg" alt="smallcloud7" class="smallcloud" style="left: 75%; top: 50%;">
-      <!-- smallcloud END -->
-      <img src="images/OBLAKOVOS.svg" alt="title" id="title">
-      <h1 style="top: 5%; width: 5%;">ПЕРВЫЙ АЭРОБЛАЧНЫЙ ВОКЗАЛ В МИРЕ</h1>
-      <p style="top: 6.5%; width: 7%;">Сядьте в один из наших облачных поездов <br> и позвольте вас доставить в пункт назначения по вашему выбору.</p>
       <!-- station START -->
       <!-- <img src="images/STATION.svg" alt="station" id="station">
       <img src="images/STAR.svg" alt="star" class="star" style="left: 35.1%; top: 60%;">
@@ -108,35 +97,61 @@
       <img src="images/STAR.svg" alt="star" class="star" style="width: 1.5%; left: 38.5%; top: 75%;">
       <img src="images/STAR.svg" alt="star" class="star" style="width: 4%; left: 36.5%; top: 35%;"> -->
       <div class="station">
-        <img src="images/STATION.svg" alt="station" class="star" style="width: 5%;">
-        <img src="images/STAR.svg" alt="star" class="star" style="left: -15%; top: -15%;">
-        <img src="images/STAR.svg" alt="star" class="star">
-        <img src="images/STAR.svg" alt="star" class="star">
-        <img src="images/STAR.svg" alt="star" class="star" style="left: -50%;">
+        <img src="images/STATION.svg" alt="station" style="position: absolute; width: 50%; bottom: -1%; left: 0;">
+        <img src="images/STAR.svg" alt="star" style="position: absolute; width: 25%; left: 0%;">
+        <img src="images/STAR.svg" alt="star" style="position: absolute; width: 50%; top: 10%;">
+        <img src="images/STAR.svg" alt="star" style="position: absolute; width: 25%; left: -11%; top: 65%;">
+        <img src="images/STAR.svg" alt="star" style="position: absolute; width: 15%; left: 25.5%; top: 78%;">
       </div>
       <!-- station END -->
+      <img src="images/ARROW.svg" alt="arrow" style="position: absolute; left: 35%; width: 20%; bottom: -0.5%;">
+      <img src="images/TXTWHITE.svg" alt="txtwhite" style="position: absolute; left: 60%; width: 8%; top: 5%;">
+      <img src="images/TXTBLUE.svg" alt="txtblue" style="position: absolute; left: 68%; width: 5%; top: 60%;">
+      <img src="images/TXTBLUE.svg" alt="txtblue" style="position: absolute; left: 75%; width: 5%; top: 7%;">
+      <img src="images/TXTWHITE.svg" alt="txtwhite" style="position: absolute; left: 74.5%; width: 3%; top: 80%;">
+      <!-- smallcloud START -->
+      <img src="images/SmallCloud.svg" alt="smallcloud1" class="smallcloud" style="left: -1%; bottom: -6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud2" class="smallcloud" style="left: 19%; top: 50%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud3" class="smallcloud" style="left: 33%; top: -7%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud3" class="smallcloud" style="left: 45%; top: -7%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud4" class="smallcloud" style="left: 43%; top: 70%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud5" class="smallcloud" style="left: 51%; bottom: -6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud6" class="smallcloud" style="left: 56.5%; top: 25%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud6" class="smallcloud" style="left: 58%; top: 80%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud7" class="smallcloud" style="left: 70%; top:-6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud8" class="smallcloud" style="left: 75%; top: 50%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud9" class="smallcloud" style="left: 80%; top: 5%;">
+      <img src="images/BigCloud.svg" alt="bigcloudfullop" class="bigcloud" style="left: 77%; bottom: -25%; width: 10%;">
+      <!-- smallcloud END -->
+      <!-- txt START -->
+      <img src="images/OBLAKOVOS.svg" alt="title" id="title">
+      <h1 style="top: 47%; width: 5%;">ПЕРВЫЙ АЭРОБЛАЧНЫЙ ВОКЗАЛ В МИРЕ</h1>
+      <p style="top: 51%; width: 7%;">Сядьте в один из наших облачных поездов <br> и позвольте вас доставить в пункт назначения по вашему выбору.</p>
       <div id="quotes">
         <p style="left: 21%; top: 82%;">Наслаждайтесь расслабляющей поездкой</p>
         <p style="left: 28.5%; top: 37%;">Приезжайте в Облаковос, <br> и вы испытаете лучшее путешествие в своей жизни.</p>
-        <p style="left: 45%; top: 60%;">свобода и безграничные возможности</p>
+        <p style="left: 41%; top: 25%;">свобода и безграничные возможности</p>
         <p style="left: 70%; top: 40%;">забронируйте билеты прямо сейчас <br> в пункт назначения своей мечты</p>
       </div>
+      <!-- txt END -->
       <img src="images/BigCloud.svg" alt="bigcloudfullop" class="bigcloud" style="left: 12%; opacity: 0.5;">
       <img src="images/TRAIN.svg" alt="train" id="train" style="width: 10%;">
+      <div style="position: absolute; width: 21%; right: 0; height: 100vh; background: linear-gradient(90deg, rgba(222,220,255,0) 0%, rgba(227,225,255,1) 20%, rgba(255,255,255,1) 100%);"></div>
       <img src="images/BigCloud.svg" alt="bigcloudfullop" class="bigcloud" style="left: 10%;">
+      <!-- destinations START -->
       <div class="destination" style="left: 28%; bottom: 3%;">
         <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
         <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
       </div>
-      <div class="destination" style="left: 50%; top: 10%;">
+      <div class="destination" style="left: 46%; top: 30%;">
         <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
         <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
       </div>
-      <div class="destination" style="left: 65%; bottom: 3%;">
+      <div class="destination" style="left: 63%; bottom: 3%;">
         <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
         <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
       </div>
-      <!-- <img src="images/ARROW.svg" alt="arrow" style="position: absolute; left: 40%;"> -->
+      <!-- destinations END -->
     </div>
   </body>
 </html>
