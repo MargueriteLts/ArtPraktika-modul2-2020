@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title></title>
+    <style media="screen">
+      * {
+        background: red;
+      }
+      .container {
+        background: linear-gradient(90deg, rgba(91,81,255,1) 0%, rgba(255,255,255,1) 100%);
+        width: 500%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+      /* #title {
+        width: 26.5%;
+        left: 2%;
+        position: absolute;
+      } */
+      h1, p {
+        font-family: 'Gotham', sans-serif;
+        color: white;
+        position: relative;
+        left: 3.4%;
+      }
+      h1 {
+        /* font-size: 5em; */
+        font-weight: bold;
+      }
+      p {
+        /* font-size: 3em; */
+        font-weight: lighter;
+      }
+      #quotes p {
+        position: absolute;
+        font-weight: normal;
+        /* font-size: 4em; */
+      }
+      #title {
+        width: 25%;
+        left: 3%;
+        top: 5%;
+        position: relative;
+        background: red;
+      }
+      #train {
+        position: fixed;
+        left: 15%;
+        top: 70%;
+      }
+      /* #station {
+        width: 5%;
+        position: absolute;
+        left: 36%;
+        bottom: -1%;
+      } */
+      /* .absl {
+        position: absolute;
+      } */
+      .station {
+        /* position: absolute; */
+        margin-left: 36%;
+        margin-top: -1%;
+        background: red;
+      }
+      .bigcloud {
+        width: 6%;
+        bottom: -10%;
+        position: absolute;
+      }
+      .smallcloud {
+        width: 2%;
+        position: absolute;
+      }
+      .destination {
+        width: 6%;
+        position: absolute;
+      }
+      .star {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- smallcloud START -->
+      <img src="images/SmallCloud.svg" alt="smallcloud1" class="smallcloud" style="left: -1%; bottom: -6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud2" class="smallcloud" style="left: 19%; top: 50%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud3" class="smallcloud" style="left: 33%; top: -7%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud4" class="smallcloud" style="left: 55%; top: 60%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud5" class="smallcloud" style="left: 60%; bottom: -6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud6" class="smallcloud" style="left: 62%; top: 35%;">
+      <img src="images/SmallCloud.svg" alt="smallcloud8" class="smallcloud" style="left: 73%; top:-6%; opacity: 0.5;">
+      <img src="images/SmallCloud.svg" alt="smallcloud7" class="smallcloud" style="left: 75%; top: 50%;">
+      <!-- smallcloud END -->
+      <img src="images/OBLAKOVOS.svg" alt="title" id="title">
+      <h1 style="top: 5%; width: 5%;">ПЕРВЫЙ АЭРОБЛАЧНЫЙ ВОКЗАЛ В МИРЕ</h1>
+      <p style="top: 6.5%; width: 7%;">Сядьте в один из наших облачных поездов <br> и позвольте вас доставить в пункт назначения по вашему выбору.</p>
+      <!-- station START -->
+      <!-- <img src="images/STATION.svg" alt="station" id="station">
+      <img src="images/STAR.svg" alt="star" class="star" style="left: 35.1%; top: 60%;">
+      <img src="images/STAR.svg" alt="star" class="star" style="left: 36.1%; top: 3%;">
+      <img src="images/STAR.svg" alt="star" class="star" style="width: 1.5%; left: 38.5%; top: 75%;">
+      <img src="images/STAR.svg" alt="star" class="star" style="width: 4%; left: 36.5%; top: 35%;"> -->
+      <div class="station">
+        <img src="images/STATION.svg" alt="station" class="star" style="width: 5%;">
+        <img src="images/STAR.svg" alt="star" class="star" style="left: -15%; top: -15%;">
+        <img src="images/STAR.svg" alt="star" class="star">
+        <img src="images/STAR.svg" alt="star" class="star">
+        <img src="images/STAR.svg" alt="star" class="star" style="left: -50%;">
+      </div>
+      <!-- station END -->
+      <div id="quotes">
+        <p style="left: 21%; top: 82%;">Наслаждайтесь расслабляющей поездкой</p>
+        <p style="left: 28.5%; top: 37%;">Приезжайте в Облаковос, <br> и вы испытаете лучшее путешествие в своей жизни.</p>
+        <p style="left: 45%; top: 60%;">свобода и безграничные возможности</p>
+        <p style="left: 70%; top: 40%;">забронируйте билеты прямо сейчас <br> в пункт назначения своей мечты</p>
+      </div>
+      <img src="images/BigCloud.svg" alt="bigcloudfullop" class="bigcloud" style="left: 12%; opacity: 0.5;">
+      <img src="images/TRAIN.svg" alt="train" id="train" style="width: 10%;">
+      <img src="images/BigCloud.svg" alt="bigcloudfullop" class="bigcloud" style="left: 10%;">
+      <div class="destination" style="left: 28%; bottom: 3%;">
+        <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
+        <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
+      </div>
+      <div class="destination" style="left: 50%; top: 10%;">
+        <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
+        <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
+      </div>
+      <div class="destination" style="left: 65%; bottom: 3%;">
+        <img src="images/CloudBottom.svg" alt="cloudbottom" style="width: 70%;">
+        <img src="images/CloudTop.svg" alt="cloudtop" style="width: 85%; position: absolute; left: 15%; bottom: -5%;">
+      </div>
+      <!-- <img src="images/ARROW.svg" alt="arrow" style="position: absolute; left: 40%;"> -->
+    </div>
+  </body>
+</html>
